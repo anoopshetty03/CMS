@@ -6,9 +6,9 @@ const uuidv4 = require('uuid').v4;
 
 env.config();
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "Anoop2003$",
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
   database: 'cmsdbms',
 });
 db.connect((err) => {
