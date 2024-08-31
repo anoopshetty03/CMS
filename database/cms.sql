@@ -1,4 +1,3 @@
-DROP DATABASE cmsdbms;
 CREATE DATABASE cmsdbms;
 use cmsdbms;
 
